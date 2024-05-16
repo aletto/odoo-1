@@ -1,0 +1,9 @@
+<!-- views/confirmation_template.xml -->
+
+<odoo>
+    <template id="confirmation_template">
+            <div class="alert alert-success">
+                Recibimos tu pedido de cotización. Te contactaremos a la brevedad para revisar los detalles y te enviaremos la cotización formal. ¡Gracias!
+            </div>
+    </template>
+</odoo>
