@@ -13,12 +13,18 @@
     """,
     'author': 'Andres Letto',
     'version': '1.0',
-    'depends': ['website_sale'],
+    'depends': ['base', 'website_sale', 'website', 'web'],
     'data': [
         'views/website_sale_templates.xml',
         'views/sale_order_views.xml',
-        'views/confirmation_template.xml',
+        'views/confirmation_template.xml'
     ],
+    'assets': {
+        'web.assets_frontend': [
+            'website_sale_quotation/static/src/js/custom_add_to_cart_notification.js',
+            'website_sale_quotation/static/src/xml/add_to_cart_notification.xml',
+        ],
+    },
     'installable': True,
     'application': True,
 }

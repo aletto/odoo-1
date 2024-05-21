@@ -223,3 +223,142 @@ A student wants to find the top 3 most common words in two separate but similar 
             </div>
         </xpath>
     </template>
+
+
+
+    parent company name of youtube
+
+
+Use google_search to retrieve the name of the parent company name of YouTube
+
+Use wolfram_alpha tool to retrieve the company's revenue for the fiscal year ending in 2018.
+
+Use the wolfram_alpha tool to convert the revenue figure to the company's market capitalization during the same period.
+
+Use the wolfram_alpha tool again to retrieve the company's revenue for the previous fiscal year to compare with the revenue figure for the fiscal year ending in 2018.
+
+Use the wolfram_alpha tool to analyze the company's growth in that year.
+
+
+1. Using wiki_search, retrieve the soccer player's name that received the most Ballon D'Or Awards.
+2. Using wiki_search retrieve the date of the first Ballon D'Or award won from the player obtained in step 1.
+3. Using wiki_search find the date on which the first Ballon D'Or was announced for the player obtained from Step 1.
+4. Using google_search determine the name of the company that sponsored the player obtained from step 1 in the date obtained in step 3.
+5. Using ticker_search, find the company symbol obtained in step 4.
+6. Using timeseries_intraday, find the company's closing stock price with the symbol obtained from Step 5.
+7. Finish returning the name of the soccer player obtained from step 1, the date obtained in step 3, the company name obtained from step 4 and the closing stock price of that company obtained in Step 6.
+
+
+
+1. Using google_search, retrieve the soccer player's name that received the most Ballon D'Or Awards.
+2. Using wolfram_alpha retrieve the date of the first Ballon D'Or award won from the player obtained in step 1.
+3. Using wolfram_alpha find the date on which the first Ballon D'Or was announced for the player obtained from Step 1.
+4. Using google_search determine the name of the company that sponsored the player obtained from step 1 in the date obtained in step 3.
+5. Using ticker_search, find the company symbol obtained in step 4.
+6. Using timeseries_intraday, find the company's closing stock price with the symbol obtained from Step 5.
+7. Finish returning the name of the soccer player obtained from step 1, the date obtained in step 3, the company name obtained from step 4 and the closing stock price of that company obtained in Step 6.
+
+
+
+1. Using google_search, retrieve the soccer player's name that received the most Ballon D'Or Awards.
+
+2. Using google_search retrieve the dates of Ballon D'Or awards dates and find the first Ballon D'Or award won by the player obtained in step 1.
+
+3. Use google_search to find the date when the awards for the date obtained in step 2 were announced.
+
+4. Using google_search determine the name of the company that sponsored the player obtained from step 1 in the date obtained in step 3.
+
+5. Using ticker_search, find the company symbol obtained in step 4.
+
+6. Using timeseries_intraday, find the company's closing stock price with the symbol obtained from Step 5.
+
+7. Finish returning the name of the soccer player obtained from step 1, the date obtained in step 3, the company name obtained from step 4 and the closing stock price of that company obtained in Step 6.
+
+
+
+
+Step 2:
+
+thought: I have retrieved the name of the soccer player with the most Ballon D'Or awards. Now I need to use the google_search tool to find the dates of the awards and find the first Ballon D'Or award won by Lionel Messi.
+
+action: google_search
+
+action_input: { "query": "first Ballon D'Or award won by Lionel Messi","location": "world" }
+
+Step 3:
+
+thought: I have retrieved the date when Lionel Messi won his first Ballon D'Or award. Now I need to use the google_search tool to find the date when the awards for the date obtained were announced.
+
+action: google_search
+
+action_input: { "query": "date when the 2009 Ballon D'Or awards were announced ","location": "world" }
+
+
+
+Step 4:
+
+thought: I have retrieved the date when the awards for the date obtained were announced. Now I need to use the google_search tool to find the name of the company that sponsored the player obtained from step 1 in the date obtained in step 3.
+
+action: google_search
+
+action_input: { "query": "Sponsor listed company of Lionel Messi in 2009","location": "world" }
+
+Step 5:
+
+thought: I have retrieved the name of the company that sponsored Lionel Messi in 2009. Now I need to use the ticker_search tool to find the company symbol.
+
+action: ticker_search
+
+action_input: { "keywords": "Adidas" }
+
+
+
+Retrieve the name of the most successful soccer player in the world according to the number of Ballon d'Or awards. Then, use the name obtained to search for his first Ballon d'Or win. From there, find the announcement date of his first Ballon d'Or win. After that, get the stock price of the company sponsored by this soccer player on the same day and month on last year. The company sponsored by this soccer player should be a listed company.
+
+
+
+
+1. Using wolfram_alpha determine the languages that are Romance.
+2. Using wolfram_alpha determine the countries that have languages retrieved from step 1 as their official language.
+3. Using google_search find the 5 most valuable companies in the world headquartered in countries retrieved from step 1. 
+4. Using ticker_search retrieve the symbol of the first company retrieved from step 2.
+5. Using timeseries_daily retrieve the daily stock prices for the first company retrieved from step 2 from the last trading day of May 2023 to the last trading day of October 2023.
+6. Using calculator calculate the average of the stock prices retrieved from step 4.
+7. Using ticker_search retrieve the symbol of the second company retrieved from step 2.
+8. Using timeseries_daily retrieve the daily stock prices for the second company retrieved from step 2 from the last trading day of May 2023 to the last trading day of October 2023.
+9. Using calculator calculate the average of the stock prices retrieved from the previous step.
+10. Using ticker_search retrieve the symbol of the third company retrieved from step 2.
+11. Using timeseries_daily retrieve the daily stock prices for the third company retrieved from step 2 from the last trading day of May 2023 to the last trading day of October 2023.
+12. Using calculator calculate the average of the stock prices retrieved from the previous step.
+13. Using ticker_search retrieve the symbol of the fourth company retrieved from step 2.
+14. Using timeseries_daily retrieve the daily stock prices for the fourth company retrieved from step 2 from the last trading day of May 2023 to the last trading day of October 2023.
+15. Using calculator calculate the average of the stock prices retrieved from the previous step.
+16. Using ticker_search retrieve the symbol of the fifth company retrieved from step 2.
+17. Using timeseries_daily retrieve the daily stock prices for the fifth company retrieved from step 2 from the last trading day of May 2023 to the last trading day of October 2023.
+18. Using calculator calculate the average of the stock prices retrieved from the previous step.
+19. Finish returning the 5 company names and the average of the stocks of the five companies. The averages are in step 6 for the first company, in step 9 for the second company, in step 12 for the third company, in step 15 for the fourth company and in step 18 for the fifth company.
+
+
+
+<div class="d-flex flex-column container align-items-end"></div>
+
+<div class="d-flex flex-column container align-items-end">
+<div role="alert" aria-live="assertive" aria-atomic="true" class="toast show o_cc1 position-relative start-0 mt-2 o_notification_fade o_notification_fade-enter-active" style="top: 58px;">
+<div class="toast-header justify-content-between">
+<strong>Artículos agregados a su carrito</strong>
+<button class="btn-close" type="button" aria-label="Close"></button>
+</div>
+<div class="toast-body">
+<div class="row g-2 mb-2">
+<div class="col-3">
+<img class="img o_image_64_max rounded mb-2 img-fluid" src="/web/image/product.product/44/image_128?unique=0a1e1ec" alt="Garantía (1 año)">
+</div>
+<div class="col-6 d-flex flex-column align-items-start">
+<span>7 x Garantía (1 año)</span>
+</div>
+<div class="col-3 d-flex flex-column align-items-end gap-1">$&nbsp;161,00</div>
+</div>
+<a role="button" class="w-100 btn btn-primary" href="/shop/cart"> Ver carrito </a>
+</div>
+</div>
+</div>

@@ -54,8 +54,9 @@ class QuotationController(http.Controller):
         phone = post.get('phone')
         order = request.website.sale_get_order()
         partner = request.env['res.partner'].sudo().search([('email', '=', email)], limit=1)
+        session = request.session
         if partner:
-            session.partner_id = partner
+            session.partner_id = partner.id
         else:
             # Create a new partner
             partner_data = {
