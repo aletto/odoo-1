@@ -67,7 +67,8 @@ class QuotationController(http.Controller):
             partner = request.env['res.partner'].sudo().create(partner_data)
 
         order.partner_id = partner.id
-        # request.env['sale.order'].sudo().browse(order.id)
+        order.message_subscribe(partner_ids=[1])
+        order.message_post(body="Se ha creado un nuevo pedido de cotización desde el sitio Web", message_type='notification', subtype_xmlid='mail.mt_comment')
         request.website.sale_reset()
 
         # Redirect to some page after processing the quotation
